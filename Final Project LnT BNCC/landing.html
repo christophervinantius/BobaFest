@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BobaFest</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu-logo">
+            <h1><a href="landing.html">BobaFest</a></h1>
+        </div>
+        <div class="menu-list">
+            <h4><a href="event.html">Event Page</a></h4>
+            <h4><a href="timeline.html">Timeline</a></h4>
+            <h4><a href="contact.html">Contact Us</a></h4>
+        </div>
+    </div>
+    <div class="page-overview" id="homepage"> 
+        <div class="overview-title" id="homepagetitle">
+            <div id="homepagetitlecontent">
+                <h1>Welcome to <span id="event-logo">BobaFest</span> !</h1>
+            </div>
+            <br>
+            <div id="homepageopening">
+                <h2>Event launching soon.</h2>
+                <button id="openingbutton" onclick="openingFunction()">Click this button for more.</button>
+            </div>  
+        </div>
+    </div>
+    <div class="page-big-title" id="faqtitle">
+        <h1><span id="event-logo">BobaFest</span> 101.</h1>
+        <p>Want to know further about this event? Click here.</p>
+    </div>
+    <br>
+    <div class="page-content" id="faqcontent">
+        <div class="page-title" id="faq1">
+            <h2>What is <span id="event-logo-content">BobaFest</span> ?</h2>
+            <p>Answer? Click here.</p>
+        </div>
+        <div class="page-desc" id="answer1">
+            <p>BobaFest is one of the biggest online exhibition in technology to be held in Indonesia that will be participated by some of the biggest Indonesian local and multinational technology companies. In BobaFest you can join our main events and also the Technology Expo.<br><br>You will not want to miss it, so stay tuned!</p>
+        </div>
+        <div class="page-title" id="faq2">
+            <h2>Why can't we miss <span id="event-logo-content">BobaFest</span> ?</h2>
+            <p>Still curious? Click here.</p>
+        </div>
+        <div class="page-desc" id="answer2">
+            <p>As we have said above, BobaFest will be participated by some of the biggest technology companies in Indonesia. You can learn from them about how technologies work and how to implement those technologies for real life things as well. Also you can learn how to build a successful technology company. <br><br>This is a very precious offer for you, you can't afford to lose it!</p>
+        </div>
+        <div class="page-title" id="faq3">
+            <h2>What will we get from <span id="event-logo-content">BobaFest</span> ?</h2>
+            <p>Starting to consider about this? Click here.</p>
+        </div>
+        <div class="page-desc" id="answer3">
+            <p>Short answer:<br>A lot. :)</p>
+            <br>
+            <p>Long answer:</p>
+            <ul>
+                <li>Sharing about how to build a successful technology company.</li>
+                <li>Knowledge about new kind of technologies just released this year.</li>
+                <li>Understanding about implementation of those technologies.</li>
+                <li>New inspiration for your life.</li>
+            </ul>
+            <br>
+            <p>Because if you know, then you know. :)</p>
+        </div>
+        <div class="page-title" id="faq4">
+            <h2>What kind of events can we take part in <span id="event-logo-content">BobaFest</span> ?</h2>
+            <p>Feel excited already? Click here.</p>
+        </div>
+        <div class="page-desc" id="answer4">
+            <p>Here are the main events you can attend to in this event.</p>
+            <ul>
+                <li>Establish Your Passion in Technology</li>
+                <li>Starting Your Own Technology Startup</li>
+                <li>Artificial Intelligence Development</li>
+                <li>Most Recent Technologies 2021</li>
+                <li>Success in a Big Technology Company</li>
+                <li>Next-Gen Gaming Experience</li>
+            </ul>
+            <p>Each of the main events will be held in total two sessions (in two successive days) to make sure all of you can enjoy the main events with a great experience. But you can only participate in just one session for each main events you have registered! You can also visit the Technology Expo. For further details for each events you can go straight to the event page. :D</p>
+        </div>
+        <div class="page-title" id="faq5">
+            <h2>What can we do in the <span id="event-logo-content">BobaFest</span> Technology Expo?</h2>
+            <p>More details? Click here.</p>
+        </div>
+        <div class="page-desc" id="answer5">
+            <p>Technology Expo is a big fair that features a lot of recent technologies presentations and also technology workshops presented by technology companies participating in this event. You can visit a lot of companies in their booths to take a look on their technology products and also to have some brief discussion with the companies. Because the event is held online, the Expo will use online meeting system with breakout rooms for each booths that you can visit freely as you want. Hopefully you can get some helpful insights about technology after attending the Expo. :D</p>
+        </div>
+        <div class="page-title" id="faq6">
+            <h2>How we can join <span id="event-logo-content">BobaFest</span> main events?</h2>
+            <p>So you mean registration? Click here.</p>
+        </div>
+        <div class="page-desc" id="answer6">
+            <p>Good question! If you want to join our event you can do registration in this form below.</p>
+            <form name="regisform" onsubmit="return validateForm()">
+                <div class="sign-up-form">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Your email here..." required>
+                    <br>
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" name="name" id="name" placeholder="Your full name here..." required>
+                    <br>
+                    <label for="phone">Phone Number</label>
+                    <br>
+                    <input type="text" name="phone" id="phone" placeholder="Your phone number here..." required>
+                    <br>
+                    <label for="event">Main Event</label>
+                    <br>
+                    <div class="dropdown">
+                        <select name="event" id="event" required>
+                            <option value="" selected hidden disabled>Select event here...</option>
+                            <option value="E01">Establish Your Passion in Technology</option>
+                            <option value="E02">Starting Your Own Technology Startup</option>
+                            <option value="E03">Artificial Intelligence Development</option>
+                            <option value="E04">Most Recent Technologies 2021</option>
+                            <option value="E05">Success in a Big Technology Company</option>
+                            <option value="E06">Next-Gen Gaming Experience</option>
+                        </select>
+                    </div>
+                    <br>
+                    <button type="submit" onclick="requestPost()">Complete Registration</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="page-footer">
+        <p>BobaFest 2021</p>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            $("#faqtitle").on("click", function(){
+                $("#faqcontent").slideToggle(1000);
+            })
+            $("#faq1").on("click", function(){
+                $("#answer1").slideToggle(500);
+            });
+            $("#faq2").on("click", function(){
+                $("#answer2").slideToggle(500);
+            });
+            $("#faq3").on("click", function(){
+                $("#answer3").slideToggle(500);
+            });
+            $("#faq4").on("click", function(){
+                $("#answer4").slideToggle(500);
+            });
+            $("#faq5").on("click", function(){
+                $("#answer5").slideToggle(500);
+            });
+            $("#faq6").on("click", function(){
+                $("#answer6").slideToggle(500);
+            });
+        });  
+    </script>
+</body>
+</html>

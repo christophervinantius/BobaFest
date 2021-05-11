@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    width: 100%;
+    padding: 10px;
+    background-color: brown;
+}
+
+.menu-logo{
+    width: 20%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.menu-logo a{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: double;
+    font-size: 50px;
+    transition: 0.5s;
+}
+
+.menu-logo a:hover{
+    color: black;
+    transition: 0.5s;
+}
+
+.menu-list{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-list a{
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.menu-list a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.page-overview{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+#homepage{
+    background-image: url('technology-illustration.jpg');
+}
+
+#eventpage{
+    background-image: url('technology-event.jpg');
+    background-position: center;
+}
+
+#timelinepage{
+    background-image: url('technology-line.jpg');
+}
+
+#contactpage{
+    background-image: url('technology-contact.jpg');
+    background-position: center;
+}
+
+.overview-title{
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.overview-title h1{
+    color: black;
+}
+
+#homepageopening{
+    background-color: brown;
+    color: white;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+#openingbutton{
+    width: 60%;
+    background-color: red;
+    border-radius: 50px;
+    color: white;
+}
+
+#openingbutton:hover{
+    background-color: white;
+    color: red;
+}
+
+#event-logo{
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+#event-logo-content{
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+.page-big-title{
+    padding: 20px;
+    background-color: brown;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.page-content{
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+.page-title{
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.page-desc{
+    background-color: brown;
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    font-size: 20px;
+    display: none;
+}
+
+#answer3, #answer4{
+    text-align: center;
+}
+
+#answer3 ul li, #answer4 ul li{
+    font-weight: bold;
+    list-style-type: none;
+}
+
+#answer4 ul li{
+    font-size: 30px;
+}
+
+#answer6{
+    text-align: center;
+}
+
+input[type=text], input[type=email], input[type=number], select{
+    border: 2px solid transparent;
+    width: 50%;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+input[type=text]:hover, input[type=email]:hover, input[type=number]:hover, select:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+button{
+    width: 20%;
+    border: 2px solid transparent;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+#contacttitle{
+    border: none;
+}
+
+.contact-detail{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    color: black;
+}
+
+.contact-info{
+    width: 30%;
+    padding: 20px;
+    background-color: brown;
+    color: white;
+    transition: 0.5s;
+}
+
+.contact-section{
+    padding: 20px;
+    text-align: center;
+    width: 35%;
+    transition: 0.5s;
+}
+
+.contact-section:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+#timelinecontent{
+    background-color: brown;
+    display: none;
+}
+
+.timeline-big-title{
+    padding: 20px;
+    width: 70%;
+    margin: 0 175px;
+}
+
+.timeline-big-title h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#registrationphase{
+    background-color: yellow;
+}
+
+#phase1{
+    color: black;
+}
+
+#preparationphase{
+    background-color: blue;
+}
+
+#eventphase{
+    background-color: green;
+}
+
+#mainevents{
+    background-color: orange;
+}
+
+#phase4{
+    color: black;
+}
+
+.timeline-detail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline-info{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.timeline-info:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.timeline-desc{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: brown;
+    color: white;
+    transition: 0.5s;
+}
+
+.timeline-desc:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+
+.timeline-divider h1{
+    text-align: center;
+}
+
+.line{
+    height: 100px;
+    margin: 0 620px;
+    background-color: white;
+}
+
+#eventcontent{
+    display: none;
+    background-color: white;
+}
+
+.carousel-inner{
+    background-color: brown;
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 600px;
+    cursor: pointer;
+}
+
+.carousel-caption h1{
+    background-color: brown;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.event-content{
+    width: 100%;
+    display: flex;
+    height: 350px;
+}
+
+.event-pic{
+    width: 40%;
+}
+
+.event-pic img{
+    width: 100%;
+    height: 350px;
+}
+
+.event-title{
+    width: 60%;
+    padding: 20px;
+    background-color: brown;
+}
+
+.event-desc{
+    color: white;
+    text-align: justify;
+}
+
+#event1, #event3, #event5{
+    text-align: right;
+}
+
+#event1 p, #event3 p, #event5 p{
+    text-align: justify;
+    text-align-last: right;
+}
+
+.page-footer{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
